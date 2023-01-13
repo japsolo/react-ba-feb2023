@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 
-const Button = (props) => {
+const Button = ({text, active}) => {
   return (
     <li className="scroll-to-section">
-      <a href="/" className={props.active !== undefined? 'active': null}>
-        { props.text }
+      <a href="/" className={active !== undefined? 'active': null}>
+        { text }
       </a>
     </li>
   );

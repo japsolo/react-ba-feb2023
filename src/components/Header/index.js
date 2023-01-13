@@ -1,6 +1,9 @@
 import Button from "./Button";
+import logo from './assets/images/logo.png'
 
-function Header() {
+function Header({ links }) {
+  
+
   return (
     <header className="header-area header-sticky">
       <div className="container">
@@ -9,24 +12,21 @@ function Header() {
             <nav className="main-nav">
               <a href="index.html" className="logo">
                 <img
-                  src="assets/images/logo.png"
+                  src={logo}
                   alt="logo"
                   style={{ "maxWidth": "112px" }}
                 />
               </a>
 
               <ul className="nav">
-                <Button text='Home' />
-                <Button text='Services' />
-                <Button text='Projects' />
-                <Button text='Pages' />
-                <Button text='Contact'/>
+                {
+                  links.map((link, i) => <Button text={link} key={link + i} />)
+                }
               </ul>
 
               <a href="/" className="menu-trigger">
                 <span>Menu</span>
               </a>
-
             </nav>
           </div>
         </div>
