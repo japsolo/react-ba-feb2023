@@ -14,15 +14,15 @@ const MainBanner = () => {
                 Tale is the best SEO agency website template using Bootstrap
                 v5.2.2 CSS for your company. It is a free download provided by
                 TemplateMo. There are 3 HTML pages,{" "}
-                <a href="index.html">Home</a>, <a href="about.html">About</a>,
-                and <a href="faqs.html">FAQ</a>.
+                <a href="/">Home</a>, <a href="/">About</a>,
+                and <a href="/">FAQ</a>.
               </p>
               <div className="main-button scroll-to-section">
-                <a href="#services">Discover More</a>
+                <a href="/">Discover More</a>
               </div>
               <span>or</span>
               <div className="second-button">
-                <a href="faqs.html">Check our FAQs</a>
+                <a href="/">Check our FAQs</a>
               </div>
             </div>
           </div>

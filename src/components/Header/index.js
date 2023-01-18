@@ -1,9 +1,7 @@
 import Button from "./Button";
-import logo from './assets/images/logo.png'
+import logo from './assets/images/logo.png';
 
 function Header({ links }) {
-  
-
   return (
     <header className="header-area header-sticky">
       <div className="container">
