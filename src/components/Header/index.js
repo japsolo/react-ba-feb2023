@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from "./Button";
 import logo from './assets/images/logo.png';
 
@@ -8,13 +9,13 @@ function Header({ links }) {
         <div className="row">
           <div className="col-12">
             <nav className="main-nav">
-              <a href="index.html" className="logo">
+              <Link to="/" className="logo">
                 <img
                   src={logo}
                   alt="logo"
                   style={{ "maxWidth": "112px" }}
                 />
-              </a>
+              </Link>
 
               <ul className="nav">
                 {

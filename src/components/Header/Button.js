@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Button = ({text, active}) => {
   return (
     <li className="scroll-to-section">
-      <a href="/" className={active !== undefined? 'active': null}>
+      <Link to={`/${text.toLowerCase()}`} className={active !== undefined? 'active': null}>
         { text }
-      </a>
+      </Link>
     </li>
   );
 };
