@@ -2,7 +2,9 @@ import { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import Services from './Services';
+import Projects from './Projects';
 import Top from './Top';
+import Footer from './Footer';
 
 class App extends Component {
   constructor() {
@@ -20,9 +22,11 @@ class App extends Component {
       <Switch>
         <Route exact path="/">
           <Top/>
+          <Services />
+          <Projects />
+          <Footer />
         </Route>
         <Route path="/services">
-          <Services />
         </Route>
       </Switch>
       </>
