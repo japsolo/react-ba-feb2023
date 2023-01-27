@@ -36,3 +36,7 @@ export const items = [
         icon: 'fa fa-link',
     }
 ]
+
+export const filterData = (array) => {
+    return array.filter(a => a.price > 100);
+}
