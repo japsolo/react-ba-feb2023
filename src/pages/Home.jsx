@@ -1,13 +1,15 @@
-import Top from '../components/Top';
-import Projects from '../components/Projects';
+import Top from "../components/Top";
+// import Projects from '../components/Projects';
+import Movies from "../components/Movies";
 
 const Home = () => {
     return (
         <>
             <Top />
-            <Projects />
+            {/* <Projects /> */}
+            <Movies />
         </>
     );
-}
- 
+};
+
 export default Home;
